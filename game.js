@@ -632,13 +632,13 @@ scene('game4', function(){
   })
 
 
-  // onCollide('spaceEnemy', 'floor', function() {
-  //   destroy(spaceEnemy);
-  //   addKaboom(spaceEnemy.pos);
-  //   play('explosion');
-  //   backgroundMusic.paused = true;
-  //   go('lose4');
-  // });
+  onCollide('spaceEnemy', 'floor', function() {
+    destroy(spaceEnemy);
+    addKaboom(spaceEnemy.pos);
+    play('explosion');
+    backgroundMusic.paused = true;
+    go('lose4');
+  });
   
   onCollide('spaceEnemy', 'bullet', function() {
     destroy(spaceEnemy);
