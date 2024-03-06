@@ -595,20 +595,20 @@ scene('game4', function(){
 
   // spawnEnemy();
 
-    let spaceEnemy = add([
-      sprite("spaceEnemy"),
-      area(),
-      pos(rand(1, 1000), -100),
-      // health(OBJ_HEALTH),
-      // anchor("bot"),
-      scale(.2,.2),
-      body(),
-      "spaceEnemy",
-      // { speed: rand(TRASH_SPEED * 0.5, TRASH_SPEED * 1.5) },
-      setGravity(250)
-    ]);
-    
-    wait(rand(3, 6), spaceEnemy);
+  let spaceEnemy = add([
+    sprite("spaceEnemy"),
+    area(),
+    pos(rand(1, 1000), -100),
+    // health(OBJ_HEALTH),
+    // anchor("bot"),
+    scale(.2,.2),
+    body(),
+    "spaceEnemy",
+    // { speed: rand(TRASH_SPEED * 0.5, TRASH_SPEED * 1.5) },
+    setGravity(500)
+  ]);
+  
+  wait(rand(5, 6), spaceEnemy);
   
 
   function spawnBullet(p) {
