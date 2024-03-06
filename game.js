@@ -605,10 +605,10 @@ scene('game4', function(){
       body(),
       "spaceEnemy",
       // { speed: rand(TRASH_SPEED * 0.5, TRASH_SPEED * 1.5) },
-      setGravity(500)
+      setGravity(250)
     ]);
     
-    wait(rand(2, 4), spaceEnemy);
+    wait(rand(3, 6), spaceEnemy);
   
 
   function spawnBullet(p) {
